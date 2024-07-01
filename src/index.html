@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To Do List</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="../dist/main.js" defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>todos</h1>
+        </div>
+
+        <section class="main">
+            <div class="list">
+                <div class="input-container">
+                    <input
+                        class="new-todo"
+                        type="text"
+                        placeholder="What needs to be done?"
+                        autofocus
+                    />
+                </div>
+
+                <div class="toggle-all-container">
+                    <input class="toggle-all" type="checkbox" />
+                    <label class="toggle-all-label"></label>
+                </div>
+
+                <ul class="todo-list"></ul>
+            </div>
+
+            <div class="summary">
+                <span class="count"></span>
+                <ul class="filters">
+                    <li><a href="#/">All</a></li>
+                    <li><a href="#/active/">Active</a></li>
+                    <li><a href="#/completed">Completed</a></li>
+                </ul>
+                <button class="clear">Clear completed items</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Double click to edit a todo item</p>
+            <p>Created for the Odin Project</p>
+        </footer>
+    </body>
+</html>
